@@ -5,9 +5,9 @@ ringring
 
 # hell week
 
-1. why
-1. i
-1. serious
+1. i'm
+1. sorry
+1. man~
 
 # heaven week
 
