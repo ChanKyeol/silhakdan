@@ -5,9 +5,9 @@ function fibo (idx) {
       return 1;
     }
     if( idx >= 3) {
-      let curNum=1;
-      let bfNum=1;
-      for ( let i=1; i<=idx-2; i++){
+      let curNum = 1;
+      let bfNum = 1;
+      for ( let i = 3; i <= idx; i++){
       sumNum = bfNum + curNum;
       bfNum = curNum;
       curNum = sumNum;
