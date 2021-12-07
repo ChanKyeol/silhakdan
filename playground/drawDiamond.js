@@ -28,3 +28,5 @@ function drawDiamond (len) {
         }
     }
 }
+
+//for add
