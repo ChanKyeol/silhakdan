@@ -35,8 +35,8 @@ function getFromAscii(ac){
                  'o', 'p', 'q', 'r', 's', 't', 'u', 
                  'v', 'w', 'x', 'y', 'z'];
     
-    for(let i = 0; i <= asciiArray.length - 1; i ++){
-        if(ac === asciiArray[i]){
+    for (let i = 0; i <= asciiArray.length - 1; i ++) {
+        if (ac === asciiArray[i]) {
             return asciiArray[i];
         }
     }
