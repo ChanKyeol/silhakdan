@@ -17,16 +17,10 @@ function muchNum(num) {
 }
 
 function getFromAscii(ac){
-    if (ac < 65) { 
+    if (ac < 65 || ac > 122) { 
         console.log("wrong number");
         return;
     };
-
-    if (ac > 122) {
-        console.log("wrong number");
-        return;
-    }
-
 
     let asciiArray = ['A','B','C','D','E','F','G','H','I',
                  'J','K','L','M','N','O','P','Q','R',
