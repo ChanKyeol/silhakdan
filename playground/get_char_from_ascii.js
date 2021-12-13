@@ -34,7 +34,7 @@ function getFromAscii(ac) {
         return;
     } 
         
-    for (let i = 0; i <= asciiArray.length - 1; i ++) {
+    for (let i = 0; i < asciiArray.length; i ++) {
             if (ac === asciiArray[i]) {
                 return asciiArray[i];
             }
