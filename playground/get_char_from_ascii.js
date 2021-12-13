@@ -28,12 +28,8 @@ function getFromAscii(ac) {
         return;
     } 
 
-        
-    for (let i = 0; i < asciiArray.length; i ++) {
-            if (ac === asciiArray[i]) {
-                return asciiArray[i];
-            }
-        }
-    
+    if (ac >= 65 && ac <= 90) return upperAsciiArr[ac - 65];
+    if (ac >= 97 && ac <= 122) return lowerAsciiArr[ac - 97];    
+   
     
 }
