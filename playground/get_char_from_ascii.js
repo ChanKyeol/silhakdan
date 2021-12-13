@@ -18,7 +18,9 @@ function muchNum(num) {
 
 function getFromAscii(ac) {
 
-    const upperAsciiArr = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X', 'Y', 'Z'];
+    //코드가이드            65  66  67  68  69  70  71  71  ...                                                                 90
+    const upperAsciiArr = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+    //코드가이드            97  98  99  100 101 102 103 104 ...                                                                 122
     const lowerAsciiArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 
     if (ac < 65 || ac > 122) {
