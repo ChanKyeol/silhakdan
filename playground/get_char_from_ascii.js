@@ -27,14 +27,18 @@ function getFromAscii(ac){
     
     if(ac < 65){
         console.log("wrong number");
-    } else if (ac > 122) {
+        return;
+    } 
+    if (ac > 122) {
         console.log("wrong number");
-    } else {
-        for(let i = 0; i <= asciiArray.length - 1; i ++){
+        return;
+    } 
+        
+    for(let i = 0; i <= asciiArray.length - 1; i ++){
             if(ac === asciiArray[i]){
                 return asciiArray[i];
             }
         }
-    }
+    
     
 }
