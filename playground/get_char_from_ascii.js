@@ -25,14 +25,11 @@ function getFromAscii(ac) {
                  'o', 'p', 'q', 'r', 's', 't', 'u', 
                  'v', 'w', 'x', 'y', 'z'];
     
-    if (ac < 65) {
+    if (ac < 65 || ac > 122) {
         console.log("wrong number");
         return;
     } 
-    if (ac > 122) {
-        console.log("wrong number");
-        return;
-    } 
+
         
     for (let i = 0; i < asciiArray.length; i ++) {
             if (ac === asciiArray[i]) {
