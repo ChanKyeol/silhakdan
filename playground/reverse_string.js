@@ -5,3 +5,5 @@ function reverseWord(word) {
     }
     return reverseStr;
 }
+
+//char제거
