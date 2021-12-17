@@ -6,4 +6,4 @@ function fiboRecursive(idx) {
   
 
 
-console.log(fiboRecursive(12));
+console.log(fiboRecursive(112));
