@@ -4,3 +4,6 @@ function fiboRecursive(idx) {
     if(idx >= 3) return fiboRecursive(idx - 2) + fiboRecursive(idx - 1);
   }
   
+
+
+console.log(fiboRecursive(4));
