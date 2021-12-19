@@ -1,7 +1,4 @@
-let a = 'abcde';
-let b = 'c';
-
-function remove_str(a, b){
+function remove_char_from_str(a, b){
     let return_str = '';
     for (let i = 0; i < a.length; i++) {
         if (a[i] != b)   
@@ -10,4 +7,4 @@ function remove_str(a, b){
     return return_str;
 }
 
-console.log(remove_str(a, b));
+console.log(remove_str('abcde', 'c'));
