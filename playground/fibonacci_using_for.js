@@ -19,4 +19,3 @@ function fibo (idx) {
 }
 
 
-[3, 4, 5, 6, 20, 70].forEach((i) => console.log(i)); //forEach 사용으로 코드
