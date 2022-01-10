@@ -1,21 +1,16 @@
-# silhakdan
+# ⚓봉선골 실학단 (Since 2021 Winter)
 
-we want realize world peace by bongsungol silhakdan
-ringring
+코딩공부를 진행한 과정들을 기록합니다.
 
-# hell week
+# 진행중인 과정
 
-1. i'm
-1. sorry
-1. man~
+-   (2021.12. ~) 📕 독서: 오늘부터 개발자
+-   (2021.12. ~) 👩🏻‍💻 알고리즘: 프로그래머스 1단계 정복
 
-# heaven week
+# 완료한 과정
 
--   i'm so
--   worry
--   high
--   and wanna be with you
+-   (아직 완료한 과정이 없습니다.)
 
-# hard branch
+---
 
--   koko
+<p align="center">“Programming isn’t about what you know; it’s about what you can figure out.”<br>Chris Pine</p>
