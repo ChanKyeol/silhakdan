@@ -16,12 +16,7 @@ function muchNum(num) {
     }
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> f17856f... chapter2_1 upload goodnightbro
 function getFromAscii(ac) {
-
     //코드가이드            65  66  67  68  69  70  71  71  ...                                                                 90
     const upperAsciiArr = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
     //코드가이드            97  98  99  100 101 102 103 104 ...                                                                 122
@@ -33,12 +28,5 @@ function getFromAscii(ac) {
     } 
 
     if (ac >= 65 && ac <= 90) return upperAsciiArr[ac - 65];
-<<<<<<< HEAD
     if (ac >= 97 && ac <= 122) return lowerAsciiArr[ac - 97];    
-   
-=======
-    if (ac >= 97 && ac <= 122) return lowerAsciiArr[ac - 97];
-   
-    
->>>>>>> f17856f... chapter2_1 upload goodnightbro
 }
