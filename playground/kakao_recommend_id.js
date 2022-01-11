@@ -68,7 +68,7 @@ function solution(new_id) {
 
 // 나의 풀이는 길고도 길구나.. 
 
-const solution = (new_id) => {
+const solution1 = (new_id) => {
     const id = new_id
         .toLowerCase()
         .replace(/[^\w\d-_.]/g, '')
@@ -82,7 +82,7 @@ const solution = (new_id) => {
 
 // 깔끔한 정규식 풀이 
 
-function solution(new_id) {
+function solution2(new_id) {
     // 1단계 new_id의 모든 대문자를 대응되는 소문자로 치환
     new_id = new_id.toLowerCase();
 
@@ -115,7 +115,7 @@ function solution(new_id) {
 
 // ? : 이게 삼항연산그런거인가
 
-const solution = id => {
+const solution3 = id => {
     id = id.toLowerCase()
     id = removeInvalidChar(id)
     id = removeInvalidDots(id)
