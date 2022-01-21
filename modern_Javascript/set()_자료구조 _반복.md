@@ -2,13 +2,13 @@
 
 ## [!]
 
-```xml
+```javascript
 let ar = ['a', 'b', 'c', 'd', 'e'];
 ```
 
 ## [1]: 전통적인 for 반복문
 
-```xml
+```javascript
 for (let i = 0; i < ar.length; i++) {
 		console.log(ar[i]);
 }
@@ -18,7 +18,7 @@ console.log('____________________');
 
 ## [2]: forEach() 메서드를 사용한 반복
 
-```xml
+```javascript
 ar.forEach(function(x) {
 		console.log(x)
 }
@@ -28,7 +28,7 @@ ar.forEach( val => console.log(val);
 
 ## [3]: Set자료구조의 다양한 메서드 —> keys(), values()
 
-```xml
+```javascript
 let testSet3 = new Set( [”tiger”, “lion”, “dog”, “cat”] );
 testSet3.add("hippo");
 
@@ -51,7 +51,7 @@ console.log(arr(1)); // "lion"
 
 1. keys() 메서드 —> Iterator(반복자) 객체를 반환 —> next() 메서드
 
-```xml
+```javascript
 const key_itr = testSet3.keys();
 
 console.log(key_itr.next().value); // "tiger"
@@ -63,7 +63,7 @@ console.log(key_itr.next().value); // "cat"
 
 2. values() 메서드 —> Iterator(반복자) 객체를 반환 —> next() 메서드
 
-```xml
+```javascript
 const val_itr = testSet3.values();
 
 console.log(val_itr.next().value); // “tiger”
@@ -74,7 +74,7 @@ console.log(val_itr.next().value); // “cat”
 
 ## [4]: for .. of 반복문으로 출력 (배열이 아니기 때문에 in으로는 출력 불가)
 
-```xml
+```javascript
 for(let i of testSet3) {
 		console.log(i)
 } // tiger \n lion \n dog \n cat
@@ -82,7 +82,7 @@ for(let i of testSet3) {
 
 ## [5]: extries() 메서드
 
-```xml
+```javascript
 let testSet5 = new Set();
 testSet5.add('홍길동');
 testSet5.add('이순신');
