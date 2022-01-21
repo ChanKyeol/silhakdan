@@ -94,4 +94,4 @@ for(let i of entires) {
 entries() 메서드는 Set 요소 각각의 요소에 대해서 배열로 반환을 해준다.
 ```
 
-### 삽입 순으로 Set 요소 각각에 대해서 [value, value] 배열 형식으로 새로운 객체를 반환.
+### 삽입 순으로 Set 요소 각각에 대해서 [value, value] 배열 형식으로 새로운 객체를 반환..
