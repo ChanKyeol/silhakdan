@@ -1,12 +1,10 @@
 # 3. set() 자료구조 - 반복
 
-## [!]
-
 ```javascript
 let ar = ["a", "b", "c", "d", "e"];
 ```
 
-## [1]: 전통적인 for 반복문
+## 전통적인 for 반복문
 
 ```javascript
 for (let i = 0; i < ar.length; i++) {
@@ -16,7 +14,7 @@ for (let i = 0; i < ar.length; i++) {
 console.log("____________________");
 ```
 
-## [2]: forEach() 메서드를 사용한 반복
+## forEach() 메서드를 사용한 반복
 
 ```javascript
 ar.forEach(function(x) {
@@ -26,7 +24,7 @@ ar.forEach(function(x) {
 ar.forEach( val => console.log(val);
 ```
 
-## [3]: Set자료구조의 다양한 메서드 —> keys(), values()
+## Set자료구조의 다양한 메서드 —> keys(), values()
 
 ```javascript
 let testSet3 = new Set( [”tiger”, “lion”, “dog”, “cat”] );
@@ -71,7 +69,7 @@ console.log(val_itr.next().value); // “dog”
 console.log(val_itr.next().value); // “cat”
 ```
 
-## [4]: for .. of 반복문으로 출력 (배열이 아니기 때문에 in으로는 출력 불가)
+## for .. of 반복문으로 출력 (배열이 아니기 때문에 in으로는 출력 불가)
 
 ```javascript
 for (let i of testSet3) {
@@ -79,7 +77,7 @@ for (let i of testSet3) {
 } // tiger \n lion \n dog \n cat
 ```
 
-## [5]: extries() 메서드
+## extries() 메서드
 
 ```javascript
 let testSet5 = new Set();

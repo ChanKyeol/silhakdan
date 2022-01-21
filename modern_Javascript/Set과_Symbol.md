@@ -1,18 +1,18 @@
 # Set과 Symbol
 
-## [!]
+## Set과 Map
 
 es6에서 새롭게 도입한 데이터 자료구조 —> map, set
 
 map은 key와 value를 한 쌍으로 묶는다는 점에서 객체(object)와 비슷하고, set은 중복을 허용하지 않는다는 특징을 빼면 —> 배열과 유사.
 
-## [1]: set
+## set
 
 -   set —>집합 —>key, value의 쌍이 있다면 value들의 집합 또는 컬렉션.
 
 -   파이썬 학습자 —> 파이썬의 set을 연상.
 
-## [2]: 특징
+## 특징
 
 -   배열(array)은 같은 값을 가질 수 잇지만, set(집합)은 같은 값을 중복해서 가질 수 없다.
 
@@ -27,7 +27,7 @@ console.log(array[4]); //5
 console.log(array[5]); //5
 ```
 
-## [3]: set 사용법
+## set 사용법
 
 -   생성 —> new
 
