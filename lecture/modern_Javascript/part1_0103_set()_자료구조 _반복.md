@@ -1,14 +1,7 @@
 # 3. set() 자료구조 - 반복
 
-<<<<<<< HEAD:lecture/modern_Javascript/part1_0103_set()_자료구조 _반복.md
 ```javascript
 let ar = ["a", "b", "c", "d", "e"];
-=======
-## [!]
-
-```javascript
-let ar = ['a', 'b', 'c', 'd', 'e'];
->>>>>>> 20f3b46... Update set()_자료구조 _반복.md:modern_Javascript/set()_자료구조 _반복.md
 ```
 
 ## 전통적인 for 반복문
@@ -79,13 +72,8 @@ console.log(val_itr.next().value); // “cat”
 ## for .. of 반복문으로 출력 (배열이 아니기 때문에 in으로는 출력 불가)
 
 ```javascript
-<<<<<<< HEAD:lecture/modern_Javascript/part1_0103_set()_자료구조 _반복.md
 for (let i of testSet3) {
     console.log(i);
-=======
-for(let i of testSet3) {
-		console.log(i)
->>>>>>> 20f3b46... Update set()_자료구조 _반복.md:modern_Javascript/set()_자료구조 _반복.md
 } // tiger \n lion \n dog \n cat
 ```
 
