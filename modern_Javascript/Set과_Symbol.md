@@ -20,8 +20,8 @@ map은 key와 value를 한 쌍으로 묶는다는 점에서 객체(object)와 �
 
 -   예↓
 
-```
-let array = [1,2,3,4,5,5];
+```javascript
+let array = [1, 2, 3, 4, 5, 5];
 console.log(array); //1,2,3,4,5,5
 console.log(array[4]); //5
 console.log(array[5]); //5
@@ -31,40 +31,40 @@ console.log(array[5]); //5
 
 -   생성 —> new
 
-```
+```javascript
 let ar3 - new Set(); // 비어있는 set(집합)을 생성
 console.log(ar3); // object set 객체를 반환.
 ```
 
 -   추가 —> add
 
-```
-ar3.add('A');
-ar3.add('B');
-ar3.add('C');
-ar3.add('C');
-ar3.add('A');
-ar3.add('A'); // 중복되는 값을 허용하지 않음
+```javascript
+ar3.add("A");
+ar3.add("B");
+ar3.add("C");
+ar3.add("C");
+ar3.add("A");
+ar3.add("A"); // 중복되는 값을 허용하지 않음
 console.log(ar3); // A,B,c
 console.log(ar3[0]); // undefined --> 배열과는 다른 것을 알 수 있음.
 ```
 
 -   사이즈
 
-```
+```javascript
 console.log("ar3 사이즈는 = "ar3.size) //3
 ```
 
 -   삭제 —> delete
 
-```
-ar3.delete('C');
+```javascript
+ar3.delete("C");
 console.log(ar3); // A,B
 ```
 
 -   한번에 모두 삭제
 
-```
+```javascript
 ar3.clear();
 console.log(ar3); // ''
 ```
