@@ -24,7 +24,7 @@ ar.forEach(function(x) {
 ar.forEach( val => console.log(val);
 ```
 
-## Set자료구조의 다양한 메서드 —> keys(), values()
+## Set자료구조의 다양한 메서드 keys(), values()
 
 ```javascript
 let testSet3 = new Set( [”tiger”, “lion”, “dog”, “cat”] );
@@ -47,7 +47,7 @@ console.log(arr(0)); // "tiger"
 console.log(arr(1)); // "lion"
 ```
 
-1. keys() 메서드 —> Iterator(반복자) 객체를 반환 —> next() 메서드
+### keys() 메서드는 Iterator(반복자) 객체를 반환 —> next() 메서드
 
 ```javascript
 const key_itr = testSet3.keys();
@@ -58,7 +58,7 @@ console.log(key_itr.next().value); // "dog"
 console.log(key_itr.next().value); // "cat"
 ```
 
-2. values() 메서드 —> Iterator(반복자) 객체를 반환 —> next() 메서드
+### values() 메서드 —> Iterator(반복자) 객체를 반환 —> next() 메서드
 
 ```javascript
 const val_itr = testSet3.values();
@@ -77,7 +77,7 @@ for (let i of testSet3) {
 } // tiger \n lion \n dog \n cat
 ```
 
-## extries() 메서드
+## extries()
 
 ```javascript
 let testSet5 = new Set();
