@@ -3,11 +3,11 @@
 ## 생성시 값을 추가하는 방법
 
 ```javascript
-let ar = new Set().add('X').add('Y)
+let ar = new Set().add("X").add("Y");
 console.log(ar); //X, Y
 ```
 
--   추가
+### 추가, add()
 
 ```javascript
 ar.add("A");
@@ -18,7 +18,9 @@ console.log(ar); // X, Y, A, B, C
 console.log(ar.size); // 5
 ```
 
-## 출력 —> Spread 연산자 사용 —> 이터러블 객체(Iterable Object)의 요소를 하나씩 분리하여 전개 —> 펼침 연산자
+## Spread 연산자를 사용해 출력하는 방법
+
+### 펼침 연산자는 이터러블 객체(Iterable Object)의 요소를 하나씩 분리하여 전개한다.
 
 ```javascript
 let testArr = ["k", "o", "r", "e", "a"];
