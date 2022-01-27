@@ -1,0 +1,26 @@
+{
+  "name": "silhakdan",
+  "version": "1.0.0",
+  "description": "코딩공부를 진행한 과정들을 기록합니다. 과연 그는 개발자가 될 수 있을까요?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChanKyeol/silhakdan.git"
+  },
+  "author": "clodFlow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChanKyeol/silhakdan/issues"
+  },
+  "homepage": "https://github.com/ChanKyeol/silhakdan#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0"
+  }
+}
