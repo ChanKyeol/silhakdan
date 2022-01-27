@@ -20,7 +20,7 @@ console.log(ar.size); // 5
 
 ## Spread 연산자를 사용해 출력하는 방법
 
-### 펼침 연산자는 이터러블 객체(Iterable Object)의 요소를 하나씩 분리하여 전개한다.
+펼침 연산자는 이터러블 객체(Iterable Object)의 요소를 하나씩 분리하여 전개한다.
 
 ```javascript
 let testArr = ["k", "o", "r", "e", "a"];
