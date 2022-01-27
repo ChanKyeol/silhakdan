@@ -52,7 +52,7 @@ console.log(arr(1)); // "lion"
 
 Iterator(반복자) 객체를 반환, Iterator.next() 메소드를 활용하여 다음 값에 접근
 
-```javascript
+```js
 const key_itr = testSet3.keys();
 
 console.log(key_itr.next().value); // "tiger"
@@ -65,7 +65,7 @@ console.log(key_itr.next().value); // "cat"
 
 Iterator(반복자) 객체를 반환, Iterator.next() 메소드를 활용하여 다음 값에 접근
 
-```javascript
+```js
 const val_itr = testSet3.values();
 
 console.log(val_itr.next().value); // “tiger”
@@ -78,7 +78,7 @@ console.log(val_itr.next().value); // “cat”
 
 배열이 아니기 때문에 for..in 문으로는 Set 요소 접근 불가
 
-```javascript
+```js
 for (let i of testSet3) {
     console.log(i); // tiger, lion, dog, cat 를 순차적으로 출력
 }
@@ -92,7 +92,7 @@ Set 는 value 가 곧 key 이기 때문에 다음과 같이 key, value 가 같�
 
 삽입 순으로 Set 요소 각각에 대해서 [value, value] 배열 형식으로 새로운 객체를 반환.
 
-```javascript
+```js
 let testSet5 = new Set();
 testSet5.add("홍길동");
 testSet5.add("이순신");

@@ -4,7 +4,7 @@
 
 Symbol() 함수를 사용하여 생성
 
-```javascript
+```js
 let symbol = Symbol();
 ```
 
@@ -16,7 +16,7 @@ let symbol = Symbol();
 
 이유는 심볼은 매번 심볼함수 호출 시 새로운 심볼 값을 생성해내기 때문
 
-```javascript
+```js
 let symbol2 = Symbol("personName"); //이미 이 함수들은 각각 고유한 값을 만들었기 때문에 다른값이 나온다.
 let symbol3 = Symbol("personName");
 
@@ -28,7 +28,7 @@ alert(symbol2 == symbol3); //false
 
 심볼 값은 문자열 형태로 변환할 수 없기 때문에 출력은 console.log로 콘솔에 출력해야한다.
 
-```jsx
+```js
 let symbol5 = Symbol("age");
 alert(symbol5); // 오류
 console.log(symbol5); // Symbol(age), 이와 같은 형태로 출력된다.
@@ -38,7 +38,7 @@ console.log(symbol5); // Symbol(age), 이와 같은 형태로 출력된다.
 
 배열 객체에 속성을 추가하면 for .. in 반복문으로 출력시 해당 속성도 같이 출력이 된다.
 
-```jsx
+```js
 let ar6 = [1, 2, 3, 4, 5];
 ar6.someProperty = 10;
 // for .. in 구문으로 출력을 했을 때 0,1,2,3,4, someproperty 속성까지 같이 출력이 된다.
@@ -51,7 +51,7 @@ for (let i in ar6) {
 
 ## 심볼형을 사용하면
 
-```jsx
+```js
 let ar6_ = [1, 2, 3, 4, 5];
 let someProperty = Symbol("someProperty");
 

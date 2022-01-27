@@ -2,14 +2,14 @@
 
 ## 생성시 값을 추가하는 방법
 
-```javascript
+```js
 let ar = new Set().add("X").add("Y");
 console.log(ar); //X, Y
 ```
 
 ### 추가, add()
 
-```javascript
+```js
 ar.add("A");
 ar.add("B");
 ar.add("C");
@@ -22,7 +22,7 @@ console.log(ar.size); // 5
 
 펼침 연산자는 이터러블 객체(Iterable Object)의 요소를 하나씩 분리하여 전개한다.
 
-```javascript
+```js
 let testArr = ["k", "o", "r", "e", "a"];
 
 console.log(...testArr); // k, o, r, e, a

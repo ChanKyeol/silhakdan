@@ -28,21 +28,21 @@ Prototype 객체는 new 연산자에 의해서 생성된 객체는 공유 프로
 
 ### example
 
-```jsx
+```js
 const fruit = { name: "apple" };
 console.log(fruit.name); // apple
 ```
 
 속성 추가
 
-```jsx
+```js
 fruit.expiration = "20241231";
 console.log(fruit.expiration); //20241231
 ```
 
 속성이 있는지 없느지 확인, hasOwnProperty()
 
-```jsx
+```js
 console.log(fruit.hasOwnProperty('expiration'); //true
 console.log(fruit.hasOwnProperty('country'); //false
 //fruit 객체는 위 메서드를 가지고 있지 않지만 ‘.’ 찍고 사용이 가능함
@@ -50,7 +50,7 @@ console.log(fruit.hasOwnProperty('country'); //false
 
 ### hasOwnProperty() 메서드는 어떻게 사용되나?
 
-```jsx
+```js
 console.log(fruit); //{name: "apple", expiration: "20241231"} __proto__
 
 const aaa = {};
@@ -59,7 +59,7 @@ console.log(aaa); // __proto__ 빈객체라 하더라도 자기자신이 만들�
 
 ### hasOwnProperty()를 fruit() 객체에서 정의해버리면?
 
-```jsx
+```js
 const fruit2 = {
 
 		name: 'apple',
