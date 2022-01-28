@@ -17,7 +17,7 @@ map과 set은 Es6에서 새롭게 도입한 자료구조
 
 -   중복제거에 유용
 
-```javascript
+```js
 // Set 기본 예제
 
 let array = [1, 2, 3, 4, 5, 5];
@@ -30,14 +30,14 @@ console.log(array[5]); //5
 
 ### 생성
 
-```javascript
+```js
 let ar3 = new Set(); // 비어있는 set(집합)을 생성
 console.log(ar3); // object set 객체를 반환
 ```
 
 ### 추가, add()
 
-```javascript
+```js
 ar3.add("A");
 ar3.add("B");
 ar3.add("C");
@@ -50,20 +50,20 @@ console.log(ar3[0]); // undefined, 배열의 사용법과는 다름
 
 ### 사이즈, size
 
-```javascript
+```js
 console.log("ar3 사이즈는 = ", ar3.size); // 3
 ```
 
 ### 삭제, delete()
 
-```javascript
+```js
 ar3.delete("C");
 console.log(ar3); // A, B
 ```
 
 ### 한번에 모두 삭제, clear()
 
-```javascript
+```js
 ar3.clear();
 console.log(ar3); // ''
 ```
