@@ -20,10 +20,10 @@ map과 set은 Es6에서 새롭게 도입한 자료구조
 ```js
 // Set 기본 예제
 
-let array = [1, 2, 3, 4, 5, 5];
-console.log(array); //1,2,3,4,5,5
-console.log(array[4]); //5
-console.log(array[5]); //5
+const array = [1, 2, 3, 4, 5, 5]
+console.log(array) // 1,2,3,4,5,5
+console.log(array[4]) // 5
+console.log(array[5]) // 5
 ```
 
 ## set 사용법
@@ -31,39 +31,39 @@ console.log(array[5]); //5
 ### 생성
 
 ```js
-let ar3 = new Set(); // 비어있는 set(집합)을 생성
-console.log(ar3); // object set 객체를 반환
+const ar3 = new Set() // 비어있는 set(집합)을 생성
+console.log(ar3) // object set 객체를 반환
 ```
 
 ### 추가, add()
 
 ```js
-ar3.add("A");
-ar3.add("B");
-ar3.add("C");
-ar3.add("C");
-ar3.add("A");
-ar3.add("A"); // 중복되는 값을 허용하지 않음
-console.log(ar3); // A, B, C
-console.log(ar3[0]); // undefined, 배열의 사용법과는 다름
+ar3.add('A')
+ar3.add('B')
+ar3.add('C')
+ar3.add('C')
+ar3.add('A')
+ar3.add('A') // 중복되는 값을 허용하지 않음
+console.log(ar3) // A, B, C
+console.log(ar3[0]) // undefined, 배열의 사용법과는 다름
 ```
 
 ### 사이즈, size
 
 ```js
-console.log("ar3 사이즈는 = ", ar3.size); // 3
+console.log('ar3 사이즈는 = ', ar3.size) // 3
 ```
 
 ### 삭제, delete()
 
 ```js
-ar3.delete("C");
-console.log(ar3); // A, B
+ar3.delete('C')
+console.log(ar3) // A, B
 ```
 
 ### 한번에 모두 삭제, clear()
 
 ```js
-ar3.clear();
-console.log(ar3); // ''
+ar3.clear()
+console.log(ar3) // ''
 ```

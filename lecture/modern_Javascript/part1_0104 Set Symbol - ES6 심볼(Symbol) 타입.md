@@ -31,21 +31,21 @@
 심볼을 사용하지 않으면 다음과 같은 문제가 발생한다.
 
 ```js
-let ar = [1, 2, 3, 4, 5];
-alert(ar.length); // 5, 배열의길이 즉 요오 수를 알 수 잇는 내장된 속성: length 속성 덕분에
+const ar = [1, 2, 3, 4, 5]
+alert(ar.length) // 5, 배열의길이 즉 요오 수를 알 수 잇는 내장된 속성: length 속성 덕분에
 
-ar.length = 50; // ar배열에 length속성을 정의하고 50을 할당
-alert(ar.length); // 50: 이렇게 덮어 써버림
+ar.length = 50 // ar배열에 length속성을 정의하고 50을 할당
+alert(ar.length) // 50: 이렇게 덮어 써버림
 ```
 
 심볼을 사용하면 다음과 같이 객체 속성의 중복을 피할 수 있다.
 
 ```js
-let ar2 = [1, 2, 3, 4, 5];
-const length = Symbol("length");
-ar2[length] = 50; // ar2 배열의 length 속성에 50을 할당
-alert(ar2.length); // 5
-alert(ar2[length]); // 50;
+const ar2 = [1, 2, 3, 4, 5]
+const length = Symbol('length')
+ar2[length] = 50 // ar2 배열의 length 속성에 50을 할당
+alert(ar2.length) // 5
+alert(ar2[length]) // 50;
 ```
 
 ## 정리

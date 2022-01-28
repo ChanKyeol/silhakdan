@@ -7,7 +7,8 @@
 Symbol() 함수를 사용하여 `new` 키워드 없이 생성가능하다.
 
 ```js
-let symbol = Symbol();
+// eslint-disable-next-line symbol-description
+const symbol = Symbol()
 ```
 
 ### 심볼의 파라미터
@@ -21,11 +22,12 @@ let symbol = Symbol();
 이유는 심볼은 매번 심볼함수 호출 시 새로운 심볼 값을 생성해내기 때문이다.
 
 ```js
-let symbol2 = Symbol("personName"); //이미 이 함수들은 각각 고유한 값을 만들었기 때문에 다른값이 나온다.
-let symbol3 = Symbol("personName");
+const symbol2 = Symbol('personName') // 이미 이 함수들은 각각 고유한 값을 만들었기 때문에 다른값이 나온다.
+const symbol3 = Symbol('personName')
 
-alert(symbol2 === symbol3); //false
-alert(symbol2 == symbol3); //false
+alert(symbol2 === symbol3) // false
+// eslint-disable-next-line eqeqeq
+alert(symbol2 == symbol3) // false
 ```
 
 ## 심볼의 출력 형태
@@ -33,9 +35,9 @@ alert(symbol2 == symbol3); //false
 심볼 값은 문자열 형태로 변환할 수 없기 때문에 출력은 `console.log`로 콘솔에 출력해야한다.
 
 ```js
-let symbol5 = Symbol("age");
-alert(symbol5); // 오류
-console.log(symbol5); // Symbol(age)
+const symbol5 = Symbol('age')
+alert(symbol5) // 오류
+console.log(symbol5) // Symbol(age)
 ```
 
 ## 심볼형을 활용한 은닉화
@@ -45,27 +47,27 @@ console.log(symbol5); // Symbol(age)
 심볼을 사용하지 않고 배열 객체에 속성을 추가하면 for..in 반복문으로 출력시 해당 속성도 같이 출력이 된다.
 
 ```js
-let ar6 = [1, 2, 3, 4, 5];
-ar6.someProperty = 10;
+const ar6 = [1, 2, 3, 4, 5]
+ar6.someProperty = 10
 
-for (let i in ar6) {
-    console.log(i); // 0,1,2,3,4, someProperty
+for (const i in ar6) {
+  console.log(i) // 0,1,2,3,4, someProperty
 }
 ```
 
 심볼형을 활용하면 은닉성을 보장할 수 있다. 다음과 같이
 
 ```js
-let ar6_ = [1, 2, 3, 4, 5];
-let someProperty = Symbol("someProperty");
+const ar6_ = [1, 2, 3, 4, 5]
+const someProperty = Symbol('someProperty')
 
-ar6_[someProperty] = 10; // 심볼형은 은닉성을 보장한다.
+ar6_[someProperty] = 10 // 심볼형은 은닉성을 보장한다.
 
-for (let i in ar6_) {
-    console.log(i); // 0,1,2,3,4 (someProperty) 속성은 보이지 않고 인덱스만 출력이 된다.
+for (const i in ar6_) {
+  console.log(i) // 0,1,2,3,4 (someProperty) 속성은 보이지 않고 인덱스만 출력이 된다.
 }
 
-console.log(ar6_[someProperty]); // 10
+console.log(ar6_[someProperty]) // 10
 ```
 
 ## 정리

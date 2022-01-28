@@ -3,19 +3,19 @@
 ## 생성시 값을 추가하는 방법
 
 ```js
-let ar = new Set().add("X").add("Y");
-console.log(ar); //X, Y
+const ar = new Set().add('X').add('Y')
+console.log(ar) // X, Y
 ```
 
 ### 추가, add()
 
 ```js
-ar.add("A");
-ar.add("B");
-ar.add("C");
+ar.add('A')
+ar.add('B')
+ar.add('C')
 
-console.log(ar); // X, Y, A, B, C
-console.log(ar.size); // 5
+console.log(ar) // X, Y, A, B, C
+console.log(ar.size) // 5
 ```
 
 ## Spread 연산자를 사용해 출력하는 방법
@@ -23,13 +23,13 @@ console.log(ar.size); // 5
 펼침 연산자는 이터러블 객체(Iterable Object)의 요소를 하나씩 분리하여 전개한다.
 
 ```js
-let testArr = ["k", "o", "r", "e", "a"];
+const testArr = ['k', 'o', 'r', 'e', 'a']
 
-console.log(...testArr); // k, o, r, e, a
-console.log([...testArr]); // ["k", "o", "r", "e", "a"]
+console.log(...testArr) // k, o, r, e, a
+console.log([...testArr]) // ["k", "o", "r", "e", "a"]
 
-console.log([..."hello"]); // ["h", "e", "l", "l", "o"]
+console.log([...'hello']) // ["h", "e", "l", "l", "o"]
 
-console.log(...ar);
-console.log([...ar]);
+console.log(...ar)
+console.log([...ar])
 ```
