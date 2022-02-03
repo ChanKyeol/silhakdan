@@ -6,7 +6,7 @@
 자바스크립트는 프로토타입 기반의 언어이다. 이를 기반으로 확장과 재사용성을 높이고 있다.
 
 쉽게 말해서 객체의 프로토타입(원형)을 가지고 새로운 객체를 생성해가는 프로그래밍 방식이다.
-생성된 객체는 자기자신의 프로토타입을 갖는다. 그렇기 때문에 자기자신이 만들어지게된 원형을 안다.
+생성된 객체는 자기자신의 프로토타입을 갖는다. 그렇기 때문에 자기자신이 만들어지게된 원형(부모)을 안다.
 
 ## Prototype VS Class
 
@@ -41,14 +41,15 @@ console.log(fruit.hasOwnProperty('country')) // false
 // fruit 객체는 위 메서드를 가지고 있지 않지만 ‘.’ 찍고 사용이 가능함
 ```
 
-### 📌hasOwnProperty() 메서드는 어떻게 사용되나?
+### 📌hasOwnProperty() 메서드를 어떻게 **fruit**에서 사용할 수 있나?
 
 ```js
-console.log(fruit) // {name: "apple", expiration: "20241231"} __proto__
+console.log(fruit) // {name: "apple", expiration: "20241231"} __proto__: Object
 
 const aaa = {}
-console.log(aaa) // __proto__
+console.log(aaa) // __proto__: Object
 ```
+\__proto__는 대상 객체가 어떤 프로토타입과 연결이 되어있는지 알려주는 메서드이다. 실제로 \__proto__메서드로 원형이 무엇인지 접근할 수 있다.
 
 빈 객체라 하더라도 자기자신이 만들어지게 된 부모의 객체가 무엇인지 알 수 있게된다.
 
