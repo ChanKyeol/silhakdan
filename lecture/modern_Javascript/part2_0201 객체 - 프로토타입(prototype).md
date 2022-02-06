@@ -49,7 +49,8 @@ console.log(fruit) // {name: "apple", expiration: "20241231"} __proto__: Object
 const aaa = {}
 console.log(aaa) // __proto__: Object
 ```
-\__proto__는 대상 객체가 어떤 프로토타입과 연결이 되어있는지 알려주는 메서드이다. 실제로 \__proto__메서드로 원형이 무엇인지 접근할 수 있다.
+위 예제와 같이 모든 객체는 `Object`를 원형으로 하는데 이 `Object`에 `hasOwnProperty()`가 정의되어 있어 fruit와 aaa에서 모두 접근이 가능하다.
+`__proto__`는 대상 객체가 어떤 프로토타입과 연결이 되어있는지 알려주는 메서드이다. 실제로 `__proto__`메서드로 원형이 무엇인지 접근할 수 있다.
 
 빈 객체라 하더라도 자기자신이 만들어지게 된 부모의 객체가 무엇인지 알 수 있게된다.
 
